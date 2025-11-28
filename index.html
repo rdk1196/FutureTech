@@ -40,23 +40,25 @@
             />
           </a>
         </div>
-        <nav class="header__menu">
-          <ul class="header__menu-list">
-            <li class="header__menu-item">
-              <a href="/" class="header__menu-link is-active">Home</a>
-            </li>
-            <li class="header__menu-item">
-              <a href="/" class="header__menu-link">News</a>
-            </li>
-            <li class="header__menu-item">
-              <a href="/" class="header__menu-link">Podcasts</a>
-            </li>
-            <li class="header__menu-item">
-              <a href="/" class="header__menu-link">Resources</a>
-            </li>
-          </ul>
-        </nav>
-        <a class="header__contact-us-link button button--accent">Contact Us</a>
+        <div class="header__overlay hidden-mobile">
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link is-active">Home</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">News</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">Podcasts</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">Resources</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header__contact-us-link button button--accent">Contact Us</a>
+        </div>
 
         <button
           class="header__burger-button burger-button visible-mobile"

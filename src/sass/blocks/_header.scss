@@ -1,0 +1,11 @@
+@use '../helpers' as *;
+@use '../variables' as *;
+
+.header{
+    &__promo{
+        padding-block: 20px;
+        text-align: center;
+        border-bottom: $border;   
+    }
+ 
+}

@@ -1,0 +1,16 @@
+@use '../helpers' as *;
+@use '../variables' as *;
+
+.icon{
+    display: inline-flex;
+    align-items: center;
+    column-gap: 10px;
+
+    &::after{
+        content: "";
+        flex-shrink: 0;
+        background: url("/src/icons/yellowArrow.svg") center / contain no-repeat;
+        $size: 24px;
+        @include square($size);
+    }
+}
