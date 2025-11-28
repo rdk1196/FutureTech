@@ -1,0 +1,21 @@
+{
+    "virtualTabs.groups": [
+        {
+            "name": "Grouped Styles",
+            "matchers": [
+                {
+                    "pattern": "(.*)\\.scss$",
+                    "groupBy": 1
+                },
+                {
+                    "pattern": "(.*)\\.css$",
+                    "groupBy": 1
+                },
+                {
+                    "pattern": "(.*)\\.css\\.map$",
+                    "groupBy": 1
+                }
+            ]
+        }
+    ]
+}

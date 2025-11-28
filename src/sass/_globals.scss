@@ -1,0 +1,110 @@
+@use './variables' as *;
+@use 'helpers' as *;
+
+
+body {
+    @include fluid-text(18, 14);
+
+    font-family: $font-family-base;
+    letter-spacing: -0.03em;
+    color: $color--gray-50;
+    background-color: $color--dark;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    color: $color--light;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+    font-family: $font-family-accent;
+    font-weight: 500;
+}
+
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-weight: 600;
+}
+
+h1,
+.h1 {
+    @include fluid-text(70, 30);
+    line-height: 1.2;
+}
+
+h2,
+.h2 {
+    @include fluid-text(58, 28);
+    line-height: 1.3;
+}
+
+//h3-h6 стоит дефолтный line-height:1.5 поэтому прописовать не нужно//
+h3,
+.h3 {
+    @include fluid-text(40, 24);
+}
+
+h4,
+.h4 {
+    @include fluid-text(26, 18);
+
+}
+
+h5,
+.h5 {
+    @include fluid-text(24, 18);
+}
+
+h6,
+.h6 {
+    @include fluid-text(20, 16);
+}
+
+//добавляет плавности к энтирактивным элементам
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+    transition-duration: $transition-duration;
+}
+
+a {
+    color: inherit;
+
+    @include hover {
+        color: $color--accent;
+    }
+
+    &[class] {
+        text-decoration: none;
+    }
+}
+
+//не понял для чего, потом разберись!
+:focus-visible {
+    outline: 2px dashed $color--light;
+    outline-offset: 4px;
+    transition-duration: 0s !important;
+}
